@@ -1,7 +1,11 @@
 'use strict';
 
 const removeElement = (array, item) => {
-  // Remove item from array modifying original array
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === item) {
+      array.splice(i, 1);
+    }
+  }
 };
 
 module.exports = { removeElement };
